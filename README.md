@@ -94,7 +94,7 @@ Se accede entonces al CLI del servicio:
 redis-cli
 ```
 
-Se verá la línea de comandos precedida con el signo ">" con lo cuasl se sabe que se está dentro del CLI de Redis. Allí se ejecutan estos dos comandos:
+Se verá la línea de comandos precedida con el signo ">" con lo cual se sabe que se está dentro del CLI de Redis. Allí se ejecutan estos dos comandos:
 
 ```
 > auth ADMINPASS
@@ -115,7 +115,7 @@ systemctl restart redis-server
 
 ### Configuración de la Base de Datos
 
-El servicio usa PostgreSQL como base de datos. Recuerde: esta receta es con fines didácticos, una implementación seria requiere que este servicio pueda garantizar la integridad y el respaldo de datos en un ambiente de producción con usuarios reales.
+El servicio usa PostgreSQL como base de datos. Recuerde: esta receta es con fines didácticos, una implementación seria, requiere que este servicio pueda garantizar la integridad y el respaldo de datos en un ambiente de producción con usuarios reales.
 
 ```bash
 su - postgres
@@ -251,7 +251,7 @@ Database configuration works!
 
 Es muy necesario recordar que en un ambiente de producción con usuarios reales se debe contemplar la integridad y respaldo de la base de datos usando las técnicas conocidas para tal fin.
 
-Si se comete un error al suministrar los datos, el instalador permitirá reitentar o continuar. No se debe continuar sin lograr una conexión satisfactoria.
+Si se comete un error al suministrar los datos, el instalador permitirá reintentar o continuar. No se debe continuar sin lograr una conexión satisfactoria.
 
 Seguidamente, en un proceso similar se configura la base de datos REDIS, usada para el caché de elementos en memoria:
 ```
@@ -273,7 +273,7 @@ Luego el instalador preguntará si los archivos que suben los usuarios serán al
 Do you want to store uploaded files on the cloud? No
 ```
 
-A continuación se pedirán los datos para el envío de mensajes vía correo electrónico. Esto es muy necesario y se requiere conocer el sistema de autenticación, tener acceso y lograr autorización en su servidor SMTP. A continuación se muestra un ejemplo que debe ser ajustado insertando los valores apropiados que como es lógico deberá cambiar para que se correspondan con los de su servicio:
+A continuación se pedirán los datos para el envío de mensajes vía correo electrónico. Esto es muy necesario y se requiere conocer el sistema de autenticación, tener acceso y lograr autorización en su servidor SMTP. A continuación se muestra un ejemplo que debe ser ajustado insertando los valores apropiados, que como es lógico deberá cambiar para que se correspondan con los de su servicio:
 
 ```
 Do you want to send e-mails from localhost? No
